@@ -23,8 +23,8 @@ class ContactController extends Controller
             'phone' => 'required',
             'country' => 'required',
             'city' => 'required',
-            'state' => 'nullable|size:2',
-            'zip_code' => 'required',
+            'stateregion' => 'nullable|size:2',
+            'zippostalcode' => 'required',
         ]);
 
         $contact = Contact::create($request->all());
@@ -47,8 +47,8 @@ class ContactController extends Controller
             'phone' => 'required',
             'country' => 'required',
             'city' => 'required',
-            'state' => 'nullable|size:2',
-            'zip_code' => 'required',
+            'stateregion' => 'nullable|size:2',
+            'zippostalcode' => 'required',
         ]);
 
         $contact = Contact::findOrFail($id);
